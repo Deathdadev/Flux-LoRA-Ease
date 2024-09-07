@@ -14,7 +14,10 @@ module.exports = {
     method: "shell.run",
     params: {
       path: "app/ai-toolkit",
-      message: "git submodule update --init --recursive"
+      message: [
+        "git pull",
+        "git submodule update --init --recursive"
+      ]
     }
   }]
 }
