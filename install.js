@@ -21,12 +21,6 @@ module.exports = {
       }
     },
     {
-      method: "fs.link",
-      params: {
-        venv: "app/venv"
-      }
-    },
-    {
       method: "shell.run",
       params: {
         path: "app",
@@ -50,5 +44,11 @@ module.exports = {
         }
       }
     },
+    {
+      method: "fs.link",
+      params: {
+        venv: "app/venv"
+      }
+    }
   ]
 }
